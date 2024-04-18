@@ -1,12 +1,16 @@
-variable "tier" {
-  default = "Standard_LRS"
+variable "rgname" {
+  default = "terraform-azure-rizqi"
 }
+
 variable "location" {
   default = "Southeast Asia"
 }
 
+variable "tier" {
+  default = "Standard_LRS"
+}
 variable "prefix" {
-  default = "azuredevops"
+  default = "terraform-rizqi"
 }
 
 variable "environment" {
@@ -22,11 +26,7 @@ variable "vm_password" {
 }
 
 variable "vm_hostname" {
-  default = "devops-server-1"
-}
-
-variable "rgname" {
-  default = "DevOps-Azure"
+  default = "terraform-server-1"
 }
 
 variable "tags" {

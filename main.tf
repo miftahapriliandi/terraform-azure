@@ -30,7 +30,7 @@ resource "azurerm_network_interface" "main" {
 }
 
 resource "azurerm_virtual_machine" "main" {
-  name                  = "${var.prefix}-vm"
+  name                  = "${var.vm_hostname}"
   location              = azurerm_resource_group.devops-rg.location
   resource_group_name   = azurerm_resource_group.devops-rg.name
   network_interface_ids = [azurerm_network_interface.main.id]
